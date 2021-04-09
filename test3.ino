@@ -120,6 +120,14 @@ void loop() {
             m1_ref_spd = 0;
             m2_ref_spd = 0;
           }
+          else if (u3_rcv_data == 0x41) { //A
+            m1_ref_spd = 15;
+            m2_ref_spd = 25;
+          }
+          else if (u3_rcv_data == 0x42) { //B
+            m1_ref_spd =25;
+            m2_ref_spd =15;
+          }
           break;
         case 3: //30msec
           break;
